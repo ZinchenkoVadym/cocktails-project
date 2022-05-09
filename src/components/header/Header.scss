@@ -1,0 +1,19 @@
+@import "../../global-styles/color-variables";
+
+.header {
+  height: 63px;
+  border-bottom: 2px solid $light-blue;
+  margin: 0 auto;
+
+  .header__container{
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    .header__logo {
+      color: $orange-color;
+    }
+  }
+}

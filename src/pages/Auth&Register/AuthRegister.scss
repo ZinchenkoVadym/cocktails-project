@@ -1,0 +1,62 @@
+@import "../../global-styles/color-variables";
+
+.auth__section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/back-ground.jpg");
+  overflow: hidden;
+
+  .auth__container {
+    border: 5px solid $blue-color;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+
+    .auth__form {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 350px;
+
+
+      .auth__title {
+        margin-bottom: 10px;
+        color: $orange-color;
+        font-size: 32px;
+      }
+
+      .error__container {
+        height: 20px;
+
+        .error__text {
+          color: $orange-color;
+        }
+      }
+
+      .auth__input {
+        padding: 10px 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid $light-blue;
+        color: $light-blue;
+      }
+
+
+      .redirect {
+        color: $light-blue;
+        margin: 0 auto;
+        padding-top: 10px;
+
+        a {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+}
